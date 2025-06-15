@@ -47,7 +47,7 @@ export const StoresProvider = ({ children }) => {
   useEffect(() => {
     const fetchStores = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/store'); // Update if your route is different
+        const response = await axios.get('https://ecommerce-backend-hgv4.onrender.com/store'); // Update if your route is different
         console.log(response.data)
         setStores(response.data.stores);
       } catch (err) {
