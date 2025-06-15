@@ -12,6 +12,8 @@ import Dashboard from './components/seller/Dashboard';
 import ProductsManagement from './components/seller/ProductsManagement';
 import StoreDetails from './components/StoreDetails';
 import { StoresProvider } from './context/StoresContext';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
 
  
 function App() {
@@ -28,6 +30,8 @@ function App() {
   <AuthProvider>
     
       <Routes>
+        <Route path='about' element={<About/>} />
+        <Route path='contact'  element={<Contact/>} />
         <Route path='/' element={<Front/>} />
         <Route path='/authenticate' element={<AuthPage/>} />
         <Route path='/products' element={<ProductPage/>} />
