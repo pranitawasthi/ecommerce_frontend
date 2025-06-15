@@ -40,7 +40,7 @@ export const ProductsProvider = ({ children }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/product'); // Adjust this URL as needed
+        const response = await axios.get('https://ecommerce-backend-hgv4.onrender.com/product'); // Adjust this URL as needed
         console.log(response);
         setProducts(response.data.products);
       } catch (err) {
