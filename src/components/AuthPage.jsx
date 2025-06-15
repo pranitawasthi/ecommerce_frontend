@@ -19,7 +19,7 @@ const AuthPage = () => {
     e.preventDefault(); // prevent page reload
   
     try {
-      const url = isLogin ? "http://localhost:3000/login" : "http://localhost:3000/register";
+      const url = isLogin ? "https://ecommerce-backend-hgv4.onrender.com/login" : "https://ecommerce-backend-hgv4.onrender.com/register";
       const payload = isLogin
         ? { email, password }
         : { username, email, password };
