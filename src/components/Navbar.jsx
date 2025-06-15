@@ -221,10 +221,17 @@ const Navbar = () => {
         <div className="md:hidden bg-white p-4 border-t border-gray-200">
           <div className="flex flex-col space-y-4">
             {/* <LocationSelector /> */}
+            {
+
+              isAuthenticated &&
+
+            
             <button onClick={logout} className="flex items-center text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 rounded-md text-sm font-medium">
             <Store className="h-5 w-5 mr-1" />
             Logout
           </button>
+
+            }
             
             <SearchBar />
             <div className="pt-2 border-t border-gray-100">
